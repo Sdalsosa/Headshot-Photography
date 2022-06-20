@@ -11,16 +11,41 @@
   font-family: "Inter", sans-serif;
   color: white;
   box-sizing: border-box;
-  background-color: black;
 }
 
 /* ---- headings ---- */
 
+h1 {
+  font-size: 5rem;
+  color: #b88845;
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+h4 {
+  
+}
+
+h5 {
+  
+}
+
+.header-box {
+  
+}
+
 /* ---- Navbar ---- */
 
-nav {
+.navbar {
   display: flex;
   padding-top: 1.5rem;
+  justify-content: center;
 }
 
 .nav-items {
@@ -49,6 +74,22 @@ nav {
 }
 
 /* ---- Main page Section start ----*/
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: #141519;
+  background-image: url(/assets/images/main-image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  max-width: 30rem;
+}
 
 /* ---- about section start ---- */
 
