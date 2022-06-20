@@ -1,0 +1,64 @@
+/* ---- google fonts ---- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@700&display=swap");
+
+/* ---- remove default styling and add custom ---- */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: "Inter", sans-serif;
+  color: white;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* ---- headings ---- */
+
+/* ---- Navbar ---- */
+
+nav {
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.nav-items {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-items li {
+  list-style: none;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-items a:hover {
+  color: #b88845;
+  transition: color 0.3s ease-in-out;
+}
+
+/* ---- Main page Section start ----*/
+
+/* ---- about section start ---- */
+
+/* ---- gallery section start ---- */
+
+/* ---- retouch section start ---- */
+
+/* ---- testimonial section start ---- */
+
+/* ---- contact section start ---- */
+
+/* ---- footer section start---- */
+
