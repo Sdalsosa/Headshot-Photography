@@ -118,22 +118,22 @@ p {
 
 .burger-container .burger-lines {
   display: flex;
-  height: 30px;
-  width: 40px;
+  height: 2rem;
+  width: 2.5rem;
   position: absolute;
-  top: 17px;
-  left: 20px;
+  top: 1rem;
+  left: 1.25rem;
   z-index: 2;
-  margin: 10px;
+  margin: 0.8rem;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .burger-container .burger-lines .line {
   display: block;
-  height: 4px;
+  height: 0.25rem;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.75rem;
   background: #b88845;
 }
 
@@ -157,7 +157,7 @@ p {
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  padding: 5rem 25px 25px 0;
+  padding: 5rem 1.5rem 1.5rem 0;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -258,7 +258,6 @@ p {
 
 .ba-slider {
   position:relative;
-  display: inline-block;
   line-height: 0;
   margin: 0 auto;
 }
@@ -277,6 +276,15 @@ p {
   max-width: 400px;
   height: auto;
 }
+
+.slider-lg {
+  display: inline-block;
+}
+
+.slider-sm {
+  display: none;
+}
+
 
 /* ---- gallery section start ---- */
 
@@ -598,7 +606,6 @@ footer {
     grid-template-rows: 1fr 1fr;
     width: fit-content;
   }
-
 }
 
 @media screen and (max-width:1200px) {
@@ -629,6 +636,10 @@ footer {
 }
 
 @media screen and (max-width:650px) {
+  .ba-slider img {
+    max-width: 300px;
+  }
+  
   .contact-info-sm {
     display: block;
   }
@@ -640,11 +651,19 @@ footer {
   .form-container {
     width: 300px;
   }
-
 }
 
 @media screen and (max-width:575px) {
   html {
     font-size: 10px;
     }
+
+  .mouse, .wheel {
+    transform: scale(0.6);
+  }
+
+  .scroll-down::after {
+    bottom: -1rem;
+    left: -0.5rem;
+  }
 }
