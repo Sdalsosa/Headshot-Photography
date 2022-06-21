@@ -233,3 +233,31 @@ h5 {
 
 /* ---- footer section start---- */
 
+footer {
+  position: relative;
+  background: #b88845;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-networks {
+  display: flex;
+}
+
+.social-networks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1.5rem .75rem;
+  text-decoration: none;
+  font-size: 1em;
+  transition: 0.4s;
+}
+
+.social-networks a:hover {
+  transform: scale(1.4);
+}
