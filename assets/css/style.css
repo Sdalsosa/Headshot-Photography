@@ -57,7 +57,7 @@ p {
 .navbar {
   display: flex;
   padding-top: 1.5rem;
-  justify-content: center;
+  margin-left: 12rem;
 }
 
 .nav-items {
@@ -82,7 +82,7 @@ p {
 }
 
 .nav-items a:hover {
-  color: white;
+  color:#E3E6E8;
   transition: color 0.3s ease-in-out;
 }
 
@@ -152,7 +152,7 @@ p {
 }
 
 .burger .menu-items {
-  background: #2a2a2d;
+  background-color:rgba(20, 21, 25, .5);
   max-width: 300px;
   transform: translate(-150%);
   display: flex;
@@ -179,7 +179,6 @@ p {
 
 .menu-items {
   display: flex;
-  background-color:rgba(0, 0, 0, .8);
   border-radius: 2rem;
 }
 
@@ -191,7 +190,7 @@ p {
 }
 
 .menu-items a {
-  color: #E3E6E8;
+  color:#b88845;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -200,7 +199,7 @@ p {
 }
 
 .menu-items a:hover {
-  color:#b88845;
+  color:#E3E6E8;
   transition: color 0.3s ease-in-out;
 }
 
@@ -421,7 +420,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  width: 50%;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #2a2a2d;
   align-items: top;
@@ -431,14 +430,20 @@ p {
 .contact-info {
   text-align: center;
   line-height: 2rem;
-  margin-bottom: rem;
   border: 1px solid #b88845;
+}
+
+.contact-info-sm {
+  display: none;
+}
+
+.contact-info-lg {
+  display: block;
 }
 
 .form-container {
   padding: 1rem;
-  width: 80%;
-  max-width: 550px;
+  width: 500px;
   border: 1px solid #b88845;
 }
 
@@ -568,3 +573,78 @@ footer {
   left: -1.5em;
 }
 
+@media screen and (max-width:1500px) {
+
+  .about-container, .retouch-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .testimonial-container {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .about-text {
+    padding-top: 4rem;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: fit-content;
+  }
+
+}
+
+@media screen and (max-width:1200px) {
+
+  .navbar {
+    transform: scale(0);
+  }
+}
+
+@media screen and (max-width:725px) {
+
+  .about-container, .retouch-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    padding-top: 4rem;
+  }
+
+  .navbar {
+    transform: scale(0);
+  }
+
+  .heading-box {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .contact-info-sm {
+    display: block;
+  }
+
+  .contact-info-lg {
+    display: none;
+  }
+
+  .form-container {
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width:575px) {
+  html {
+    font-size: 10px;
+    }
+}
