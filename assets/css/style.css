@@ -213,37 +213,67 @@ h3 {
   max-width: 30rem;
 }
 
-/* ---- about section start ---- */
+/* ---- about and retouch section start ---- */
 
-.about {
+.about,.retouch {
   width: 100%;
   padding-bottom: 5rem;
   background-color: #2a2a2d;
 }
 
-.about img {
+.about img, .retouch img {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
   margin: 0 auto;
 }
 
-.about-container {
+.about-container, .retouch-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 50%;
   margin: 0 auto;
 }
 
-.about-text {
+.about-text, .retouch-text {
   letter-spacing: 1px;
   line-height: 1.5em;
   font-size: 1em;
   padding: 0 2rem 4rem;
 }
 
-.about h3 {
+.about h3, .retouch h3 {
   padding-top: 2rem;
+}
+
+.about-text p, .retouch-text p {
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+/* ---- retouch slider section start ---- */
+
+.ba-slider {
+  position:relative;
+  display: inline-block;
+  line-height: 0;
+  margin: 0 auto;
+}
+
+.ba-slider > div {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  resize: horizontal;
+}
+
+.ba-slider img {
+  user-select: none;
+  max-width: 400px;
+  height: auto;
 }
 
 /* ---- gallery section start ---- */
@@ -331,19 +361,6 @@ h3 {
 
 .close::after {
   content: 'x';
-}
-
-/* ---- retouch section start ---- */
-
-.retouch {
-  background-color: #2a2a2d;
-  width: 100%;
-  padding: 5rem 0px;
-}
-
-.retouch-photo {
-  margin: 5px 5px;
-  overflow: hidden;
 }
 
 /* ---- testimonial section start ---- */
