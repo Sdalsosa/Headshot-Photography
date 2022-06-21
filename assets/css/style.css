@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ---- headings ---- */
 
 h1 {
@@ -175,7 +179,7 @@ p {
 
 .menu-items {
   display: flex;
-  background-color: #141519;
+  background-color:rgba(0, 0, 0, .8);
   border-radius: 2rem;
 }
 
@@ -187,7 +191,7 @@ p {
 }
 
 .menu-items a {
-  color: #b88845;
+  color: #E3E6E8;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -196,7 +200,7 @@ p {
 }
 
 .menu-items a:hover {
-  color: white;
+  color:#b88845;
   transition: color 0.3s ease-in-out;
 }
 
@@ -563,3 +567,4 @@ footer {
   bottom: -3em;
   left: -1.5em;
 }
+
