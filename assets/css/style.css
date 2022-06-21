@@ -37,14 +37,6 @@ h3 {
   letter-spacing: 5px;
 }
 
-h4 {
-  
-}
-
-h5 {
-  
-}
-
 .heading-box {
   border-bottom: 1px solid #b88845;
   width: 50vw;
@@ -266,13 +258,9 @@ h5 {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #ddd;
   padding: 1rem 0.5rem;
-  box-shadow: none;
-  outline: none;
   margin-bottom: 1rem;
-  color: #444;
-  font-weight: 500;
+  color: #141519;
   border-radius: 10px;
 }
 
@@ -280,9 +268,7 @@ h5 {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #ddd;
-  color: #444;
-  outline: none;
+  color: #141519;
   padding: 1rem 0.5rem;
   resize: none;
   border-radius: 10px;
@@ -296,7 +282,7 @@ h5 {
   display: block;
   position: relative;
   background: #b88845;
-  padding: 0.5em 1.5em;
+  padding: 1rem 2rem;
   text-decoration: none;
   border-radius: 50px;
   cursor: pointer;
