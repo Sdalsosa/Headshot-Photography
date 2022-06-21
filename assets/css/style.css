@@ -22,7 +22,7 @@ html {
 h1 {
   font-family: "Poppins", sans-serif;
   color: #b88845;
-  margin: 20px 0px 20px;
+  margin: 1.25rem 0 1.25rem;
   font-size: 5em;
   text-transform: uppercase;
 }
@@ -35,7 +35,7 @@ h2 {
 h3 {
   font-family: "Poppins", sans-serif;
   color: #b88845;
-  font-size: 3em;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -108,10 +108,10 @@ p {
 .burger-container input[type="checkbox"] {
   position: absolute;
   display: block;
-  height: 30px;
-  width: 40px;
-  top: 17px;
-  left: 20px;
+  height: 4rem;
+  width: 4.5rem;
+  top: 1rem;
+  left: 1.25rem;
   z-index: 5;
   opacity: 0;
 }
@@ -232,7 +232,7 @@ p {
 .about img, .retouch img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   margin: 0 auto;
 }
 
@@ -291,7 +291,7 @@ p {
 .gallery {
   background-color: #141519;
   width: 100%;
-  padding: 2rem 0px;
+  padding: 2rem 0;
 }
 
 .photo-container {
@@ -304,7 +304,7 @@ p {
 }
 
 .gallery-photo {
-  margin: 5px 5px;
+  margin: 0.5rem;
   filter: grayscale(1);
   overflow: hidden;
   transition: 1s ease-in-out;
@@ -318,8 +318,8 @@ p {
 .photo {
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
-  margin: 15px;
+  border-radius: 1.25rem;
+  margin: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -378,7 +378,7 @@ p {
 .testimonial {
   background-color: #141519;
   width: 100%;
-  padding: 2rem 0px;
+  padding: 2rem 0;
 }
 
 .testimonial-container {
@@ -462,7 +462,7 @@ p {
   padding: 1rem 0.5rem;
   margin-bottom: 1rem;
   color: #141519;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .form-container textarea {
@@ -472,7 +472,7 @@ p {
   color: #141519;
   padding: 1rem 0.5rem;
   resize: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .form-container a {
@@ -485,7 +485,7 @@ p {
   background: #b88845;
   padding: 1rem 2rem;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 3rem;
   cursor: pointer;
   outline: none;
   text-transform: uppercase;
@@ -567,7 +567,7 @@ footer {
     opacity: 1;
   }
   100% {
-    transform: translateY(15px);
+    transform: translateY(1rem);
     opacity: 0;
   }
 }
@@ -653,6 +653,14 @@ footer {
   .heading-box {
     width: 80vw;
   }
+
+  .gallery-photo {
+    filter: none;
+  }
+
+  .gallery-photo:hover {
+    transform: none;
+  }
 }
 
 @media screen and (max-width:650px) {
@@ -678,6 +686,10 @@ footer {
     font-size: 10px;
     }
 
+  .card h2 {
+    padding-top: 5rem;
+  }
+
   .mouse, .wheel {
     transform: scale(0.6);
   }
@@ -685,5 +697,17 @@ footer {
   .scroll-down::after {
     bottom: -1rem;
     left: -1rem;
+  }
+
+  .about img {
+    width: 60%
+  }
+
+  .gallery-photo {
+    width: 70%
+  }
+
+  .photo {
+    margin: 0;
   }
 }
