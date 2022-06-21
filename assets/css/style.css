@@ -37,6 +37,11 @@ h3 {
   letter-spacing: 5px;
 }
 
+p {
+  font-size: 1em;
+  text-align: justify;
+}
+
 .heading-box {
   border-bottom: 1px solid #b88845;
   width: 50vw;
@@ -231,7 +236,7 @@ h3 {
 .about-container, .retouch-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 50%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -244,12 +249,6 @@ h3 {
 
 .about h3, .retouch h3 {
   padding-top: 2rem;
-}
-
-.about-text p, .retouch-text p {
-  letter-spacing: 1px;
-  line-height: 1.5em;
-  font-size: 1.5em;
 }
 
 /* ---- retouch slider section start ---- */
@@ -403,7 +402,7 @@ h3 {
   color: #b88845;
   margin: 3rem;
   padding-top: 1rem;
-  text-align: center;
+  text-align:center;
 }
 
 /* ---- contact section start ---- */
