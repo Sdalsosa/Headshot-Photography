@@ -66,15 +66,134 @@ h3 {
 .nav-items a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  color: #b88845;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease-in-out;
 }
 
 .nav-items a:hover {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+/* ---- hamburger menu start ----*/
+
+.burger {
+  position: fixed;
+  height: 3rem;
+  z-index: 12;
+  opacity: 0.8;
+}
+
+.burger-container input[type="checkbox"],
+.burger-container .burger-lines {
+  display: block;
+}
+
+.burger-container {
+  display: block;
+  position: relative;
+}
+
+.burger-container input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 40px;
+  top: 17px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.burger-container .burger-lines {
+  display: flex;
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger-container .burger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #b88845;
+}
+
+.burger-container .burger-lines .top-line {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.burger-container .burger-lines .middle-line {
+  transition: transform 0.2s ease-in-out;
+}
+
+.burger-container .burger-lines .bottom-line {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.burger .menu-items {
+  background: #2a2a2d;
+  max-width: 300px;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 25px 25px 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.burger-container input[type="checkbox"]:checked ~ .burger-lines .top-line {
+  transform: rotate(43deg);
+}
+
+.burger-container input[type="checkbox"]:checked ~ .burger-lines .middle-line {
+  transform: scaleY(0);
+}
+
+.burger-container input[type="checkbox"]:checked ~ .burger-lines .bottom-line {
+  transform: rotate(-43deg);
+}
+
+.menu-items {
+  display: flex;
+  background-color: #141519;
+  border-radius: 2rem;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
   color: #b88845;
   transition: color 0.3s ease-in-out;
 }
+
 
 /* ---- Main page Section start ----*/
 

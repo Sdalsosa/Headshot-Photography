@@ -9,16 +9,38 @@
   </head>
   <body>
 
-    <!---- main Section start ---->
+    
+    <!---- hamburger menu start ---->
 
-    <section id="home" class="main">
+    <nav class="burger">
+      <div class="burger-container">
+        <input type="checkbox" />
+        <div class="burger-lines">
+          <span class="line top-line"></span>
+          <span class="line middle-line"></span>
+          <span class="line bottom-line"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#retouch">Retouching</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!---- main section start ---->
+
+    <section id="main" class="main">
 
       <!---- navbar ---->
 
       <nav>
         <div class="navbar">
           <ul class="nav-items">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#main">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#retouch">Retouching</a></li>
@@ -239,15 +261,15 @@
           </div>
           <h2>Phone: +353 86 3683928</h2>
           <h2>Email: <a href="mailto:alan@headshot.ie">alan@headshot.ie</a></h2>
-          <h2>Listowel, Co. Kerry</h2>
+          <h2>Address: Listowel, Co. Kerry</h2>
         </div>
         <div class="form-container">
           <form method= "POST" action="https://formdump.codeinstitute.net/">
-            <label for="name">Name</label>
+            <label for="name">Name:</label>
             <input id="name" type="text" name="name" placeholder="Your Name" required>
-            <label for="email">Email Address</label>
+            <label for="email">Email Address:</label>
             <input class="text-input" id="email" type="email" name="email_address" placeholder="E-Mail" required>
-            <label for="message">Your Message:</label>
+            <label for="message">Your message:</label>
             <textarea
               name="message"
               id="message"
