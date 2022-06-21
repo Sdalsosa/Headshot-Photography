@@ -533,25 +533,25 @@ footer {
 
 .scroll-down {
   position: absolute;
-  right: 50px;
-  bottom: 100px;
-  width: 40px;
-  height: 55px;
+  right: 2rem;
+  bottom: 5rem;
+  width: 2.5rem;
+  height: 3.5rem;
 }
 
 .mouse {
   width: 2px;
-  padding: 10px 15px;
-  height: 40px;
+  padding: 0.6rem 1rem;
+  height: 2.5rem;
   border: 2px solid #b88845;
-  border-radius: 25px;
+  border-radius: 1.5rem;
   opacity: 0.75;
   box-sizing: content-box;
 }
 
 .wheel {
-  width: 2px;
-  height: 10px;
+  width: 0.125rem;
+  height: 0.6rem;
   background-color: white;
   animation-name: scrollwheel;
   animation-duration: 2s;
@@ -684,6 +684,6 @@ footer {
 
   .scroll-down::after {
     bottom: -1rem;
-    left: -0.5rem;
+    left: -1rem;
   }
 }
