@@ -512,3 +512,55 @@ footer {
 .social-networks a:hover {
   transform: scale(1.4);
 }
+
+/*---- Scroll down icon on main----*/
+
+.scroll-down {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  width: 40px;
+  height: 55px;
+}
+
+.mouse {
+  width: 2px;
+  padding: 10px 15px;
+  height: 40px;
+  border: 2px solid #b88845;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.wheel {
+  width: 2px;
+  height: 10px;
+  background-color: white;
+  animation-name: scrollwheel;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollwheel {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+.scroll-down::after {
+  content: "Scroll Down";
+  white-space: nowrap;
+  position: absolute;
+  font-size: 0.8em;
+  bottom: -3em;
+  left: -1.5em;
+}
