@@ -581,6 +581,26 @@ footer {
   left: -1.5em;
 }
 
+/* ---- Remove all animations, transitions and smooth scroll for those 
+        with animation options turned off on device ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- media queries for small and mobile device responsivness ---- */
+
 @media screen and (max-width:1500px) {
 
   .about-container, .retouch-container {
@@ -611,7 +631,7 @@ footer {
 @media screen and (max-width:1200px) {
 
   .navbar {
-    transform: scale(0);
+    display: none;
   }
 }
 
