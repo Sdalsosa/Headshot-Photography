@@ -201,7 +201,7 @@ h5 {
   margin: 0 auto;
   align-items: center;
   justify-items: center;
-  max-width: 80vw;
+  max-width: 1400px;
 }
 
 .testimonial-photo {
@@ -231,11 +231,91 @@ h5 {
 
 /* ---- contact section start ---- */
 
+.contact {
+  background-color: #2a2a2d;
+  width: 100%;
+  padding: 2rem 0px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #2a2a2d;
+  align-items: top;
+  justify-items: center;
+}
+
+.contact-info {
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: rem;
+  border: 1px solid #b88845;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 80%;
+  max-width: 550px;
+  border: 1px solid #b88845;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0.5rem;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 1rem 0.5rem;
+  resize: none;
+  border-radius: 10px;
+}
+
+.form-container a {
+  font-size: 1.3em;
+}
+
+.btn {
+  display: block;
+  position: relative;
+  background: #b88845;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  max-width: fit-content;
+  margin: 2rem auto 0;
+  transition: 0.4s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 /* ---- footer section start---- */
 
 footer {
   position: relative;
-  background: #b88845;
+  background-color: #b88845;
   display: flex;
   flex-direction: column;
   align-items: center;
