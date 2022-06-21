@@ -188,6 +188,47 @@ h5 {
 
 /* ---- testimonial section start ---- */
 
+.testimonial {
+  background-color: #141519;
+  width: 100%;
+  padding: 2rem 0px;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  max-width: 80vw;
+}
+
+.testimonial-photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid #b88845;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 40% 60%;
+  background-color: #2a2a2d;
+  height: 100%;
+  padding: 2rem;
+  justify-items: center;
+  border: 1px solid #b88845;
+  max-width: 35rem;
+}
+
+.card h2 {
+  color: #b88845;
+  margin: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
 /* ---- contact section start ---- */
 
 /* ---- footer section start---- */
