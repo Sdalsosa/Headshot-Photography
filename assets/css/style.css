@@ -420,7 +420,6 @@ gallery lightbox was modified from code created by Kevin Powell */
   max-width: 1200px;
   margin: 0 auto;
   background-color: #2a2a2d;
-  align-items: top;
   justify-items: center;
 }
 
@@ -469,7 +468,7 @@ gallery lightbox was modified from code created by Kevin Powell */
 }
 
 .btn {
-  color: white;
+  color: #141519;
   display: block;
   position: relative;
   background: #b88845;
@@ -694,10 +693,6 @@ with animation options turned off on device taken from Kevin Powell */
   .scroll-down::after {
     bottom: -1rem;
     left: -1rem;
-  }
-
-  .about img {
-    width: 60%
   }
 
   .gallery-photo {
