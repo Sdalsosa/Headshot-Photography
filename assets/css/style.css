@@ -480,6 +480,7 @@ p {
 }
 
 .btn {
+  color: white;
   display: block;
   position: relative;
   background: #b88845;
@@ -683,7 +684,7 @@ footer {
 
 @media screen and (max-width:575px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
     }
 
   .card h2 {
