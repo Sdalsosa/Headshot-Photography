@@ -202,16 +202,20 @@ hamburger menu was modified from code created by Álvaro */
   text-align: justify;
 }
 
-.main-photo {
+.logo {
   display:flex;
   justify-content: center;
+  height: 5rem;
+  width: auto;
 }
+
 
 /*  about and retouch section start */
 
 .about,.retouch {
   width: 100%;
   padding-bottom: 5rem;
+  padding-top: 2rem;
   background-color: #2a2a2d;
 }
 
@@ -235,10 +239,6 @@ hamburger menu was modified from code created by Álvaro */
   line-height: 1.5em;
   font-size: 1em;
   padding: 0 2rem 4rem;
-}
-
- .retouch h3 {
-  padding-top: 2rem;
 }
 
 /* retouch slider section start
@@ -669,7 +669,7 @@ with animation options turned off on device taken from Kevin Powell */
   }
 
   .form-container {
-    width: 300px;
+    width: 250px;
   }
 }
 
@@ -703,4 +703,10 @@ with animation options turned off on device taken from Kevin Powell */
     margin: 0;
   }
 
+}
+
+@media screen and (max-width:300px) {
+  .ba-slider img {
+    max-width: 200px;
+  }
 }
