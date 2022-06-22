@@ -158,9 +158,11 @@ The Gallery section is accessible from both the Navbar and the hamburger menu fr
 
 This section contains 6 images that have a hover animation.
 
+![Gallery Section desktop view](docs/images/gallery.png)
+
 There is also a lightbox implemented with CSS that appears when the images are clicked to give a higher resolution image to the user. The gallery Lightbox was modified from code created by [Kevin Powell](https://codepen.io/kevinpowell/pen/LgMLao)
 
-![Gallery Section desktop view](docs/images/gallery.png)
+![Gallery Lightbox desktop view](docs/images/gallery-lightbox.png)
 
 ## Retouch Section
 
