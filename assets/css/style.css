@@ -28,8 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
-  letter-spacing: 2px;
+  font-size: 1.1rem;
 }
 
 h3 {
@@ -52,7 +51,7 @@ p {
   margin: 0 auto 5rem;
 }
 
-/* ---- Navbar ---- */
+/* ---- navbar ---- */
 
 .navbar {
   display: flex;
@@ -67,8 +66,8 @@ p {
 
 .nav-items li {
   list-style: none;
-  margin-left: 1.5em;
-  margin-bottom: 0.5em;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
 
@@ -184,8 +183,8 @@ p {
 
 .menu-items li {
   list-style: none;
-  margin-left: 1.5em;
-  margin-bottom: 0.5em;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
 
@@ -536,7 +535,7 @@ footer {
   transform: scale(1.4);
 }
 
-/*---- Scroll down icon on main----*/
+/*---- scroll down icon on main----*/
 
 .scroll-down {
   position: absolute;
@@ -588,7 +587,7 @@ footer {
   left: -1.5em;
 }
 
-/* ---- Remove all animations, transitions and smooth scroll for those 
+/* ---- remove all animations, transitions and smooth scroll for those 
         with animation options turned off on device ---- */
 
 @media (prefers-reduced-motion: reduce) {
@@ -639,6 +638,17 @@ footer {
 
   .navbar {
     display: none;
+  }
+}
+
+@media screen and (max-width:1025px) {
+  .banner {
+    max-width: 20rem;
+    top: 30%;
+  }
+
+  h1 {
+    font-size: 3.3rem;
   }
 }
 
@@ -693,6 +703,10 @@ footer {
     font-size: 12px;
     }
 
+  h3 {
+    font-size: 2rem;
+  }  
+
   .card h2 {
     padding-top: 5rem;
   }
@@ -717,4 +731,5 @@ footer {
   .photo {
     margin: 0;
   }
+
 }
