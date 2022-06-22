@@ -194,6 +194,7 @@ The footer contains the social media icons that link to the main sites as headsh
 
 * modal confirmation pop-up on form submission
 * add a calender with slots for booking studio time
+* form clear after submission
 
 [Back to top](<#contents>)
 

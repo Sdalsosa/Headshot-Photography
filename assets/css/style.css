@@ -29,7 +29,7 @@ h1 {
 
 h2 {
   font-size: 1.1rem;
-  padding-inline: 1rem;
+  padding-right: 1rem;
 }
 
 h3 {
@@ -237,7 +237,7 @@ hamburger menu was modified from code created by Álvaro */
   padding: 0 2rem 4rem;
 }
 
-.about h3, .retouch h3 {
+ .retouch h3 {
   padding-top: 2rem;
 }
 
