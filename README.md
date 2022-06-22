@@ -274,6 +274,9 @@ Gallery Lightbox was modified from code created by [Kevin Powell](https://codepe
 
 Before/After slider was modified from code created by [Lea Varou](https://lea.verou.me/2014/07/image-comparison-slider-with-pure-css/)
 
+Remove all animations, transitions and smooth scroll for those with animation options turned off on device taken from Kevin Powell.
+
+
 ## Developer
 
 * Alan Egan - Junior Software Developer at Code Institue

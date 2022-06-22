@@ -1,8 +1,8 @@
-/* ---- google fonts ---- */
+/*  google fonts  */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@700&display=swap");
 
-/* ---- remove default styling and add custom ---- */
+/*  remove default styling and add custom */
 
 * {
   padding: 0;
@@ -17,7 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ---- headings ---- */
+/*  headings  */
 
 h1 {
   font-family: "Poppins", sans-serif;
@@ -51,7 +51,8 @@ p {
   margin: 0 auto 5rem;
 }
 
-/* ---- hamburger menu start ----*/
+/* hamburger menu start
+hamburger menu was modified from code created by Álvaro */
 
 .burger {
   position: fixed;
@@ -168,9 +169,9 @@ p {
   transition: color 0.3s ease-in-out;
 }
 
-/* ---- Main page Section start ----*/
+/*  main section start */
 
-/* ---- navbar ---- */
+/*  navbar  */
 
 .navbar {
   display: flex;
@@ -194,7 +195,7 @@ p {
 
 .banner {
   position: absolute;
-  top: 50%;
+  top: 20vh;
   left: 8%;
   max-width: 30rem;
   text-align: justify;
@@ -205,7 +206,7 @@ p {
   justify-content: center;
 }
 
-/* ---- about and retouch section start ---- */
+/*  about and retouch section start */
 
 .about,.retouch {
   width: 100%;
@@ -238,7 +239,8 @@ p {
   padding-top: 2rem;
 }
 
-/* ---- retouch slider section start ---- */
+/* retouch slider section start
+before/after slider was modified from code created by Lea Varou  */
 
 .ba-slider {
   position:relative;
@@ -270,7 +272,7 @@ p {
 }
 
 
-/* ---- gallery section start ---- */
+/*  gallery section start  */
 
 .gallery {
   background-color: #141519;
@@ -308,7 +310,8 @@ p {
   overflow: hidden;
 }
 
-/* ---- gallery lightbox start ---- */
+/*  gallery lightbox start 
+gallery lightbox was modified from code created by Kevin Powell */
 
 .gallery-lightbox-image{
   max-height: 90vh;
@@ -357,7 +360,7 @@ p {
   content: 'x';
 }
 
-/* ---- testimonial section start ---- */
+/* testimonial section start */
 
 .testimonial {
   background-color: #141519;
@@ -400,7 +403,7 @@ p {
   text-align:center;
 }
 
-/* ---- contact section start ---- */
+/* contact section start */
 
 .contact {
   background-color: #2a2a2d;
@@ -483,7 +486,7 @@ p {
   transform: scale(1.1);
 }
 
-/* ---- footer section start---- */
+/* footer section start */
 
 footer {
   position: relative;
@@ -514,7 +517,7 @@ footer {
   transform: scale(1.4);
 }
 
-/*---- scroll down icon on main----*/
+/* scroll down icon on main */
 
 .scroll-down {
   position: absolute;
@@ -557,6 +560,8 @@ footer {
   }
 }
 
+/* Scroll Down animation modified from code created by Deepak K Vijayan */
+
 .scroll-down::after {
   content: "Scroll Down";
   white-space: nowrap;
@@ -566,8 +571,8 @@ footer {
   left: -1.5em;
 }
 
-/* ---- remove all animations, transitions and smooth scroll for those 
-        with animation options turned off on device ---- */
+/* remove all animations, transitions and smooth scroll for those 
+with animation options turned off on device taken from Kevin Powell */
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -584,7 +589,7 @@ footer {
   }
 }
 
-/* ---- media queries for small and mobile device responsivness ---- */
+/* media queries for small and mobile device responsivness */
 
 @media screen and (max-width:1500px) {
 
@@ -621,10 +626,6 @@ footer {
 }
 
 @media screen and (max-width:1025px) {
-  .banner {
-    max-width: 20rem;
-    top: 30%;
-  }
 
   h1 {
     font-size: 3.3rem;
