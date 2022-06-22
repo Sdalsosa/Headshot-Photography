@@ -22,7 +22,7 @@ html {
 h1 {
   font-family: "Poppins", sans-serif;
   color: #b88845;
-  margin: 1.25rem 0 1.25rem;
+  margin: 1.25rem 1rem 1.25rem;
   font-size: 5em;
   text-transform: uppercase;
 }
@@ -219,6 +219,12 @@ p {
   top: 50%;
   left: 8%;
   max-width: 30rem;
+  text-align: justify;
+}
+
+.main-photo {
+  display:flex;
+  justify-content: center;
 }
 
 /* ---- about and retouch section start ---- */
