@@ -22,13 +22,14 @@ html {
 h1 {
   font-family: "Poppins", sans-serif;
   color: #b88845;
-  margin: 1.25rem 1rem 1.25rem;
-  font-size: 5em;
+  font-size: 3.3em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.1rem;
+  padding-inline: 1rem;
 }
 
 h3 {
@@ -224,6 +225,7 @@ hamburger menu was modified from code created by Álvaro */
 .about-container, .retouch-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 60%;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -622,13 +624,6 @@ with animation options turned off on device taken from Kevin Powell */
 
   .navbar {
     display: none;
-  }
-}
-
-@media screen and (max-width:1025px) {
-
-  h1 {
-    font-size: 3.3rem;
   }
 }
 
