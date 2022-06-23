@@ -11,7 +11,7 @@ Headshot Photography Ireland is a website designed for a headshot phototography 
 * [User Experience UX](<#user-experience-ux>)
     * [Target Audience](<#target-audience>)
     * [User Stories](<#user-stories>)
-* [Design](<#design>)
+* [Design](<#design-choices>)
     * [Site Structure](<#site-structure>)
     * [Colour Scheme](<#colour-scheme>)
     * [Typography](<#typography>)
@@ -19,15 +19,13 @@ Headshot Photography Ireland is a website designed for a headshot phototography 
     * [Wireframes](<#wireframes>)
 * [Features](<#features>)
     * [Navigation Menu](<#navigation-menu>)
-    * [Home Page](<#home-page>)
-    * [About Page](<#about-page>)
-    * [Login Page](<#login-page>)
-    * [Register Page](<#register-page>)
-    * [Profile Page](<#profile-page>)
-    * [Contact Page](<#contact-page>)
+    * [Main Section](<#main-section>)
+    * [About Section](<#about-section>)
+    * [Gallery Section](<#gallery-section>)
+    * [Retouch Section](<#retouch-section>)
+    * [Testimonial Section](<#testimonial-section>)
+    * [Contact Section](<#contact-section>)
     * [Footer](<#footer>)
-    * [Create Events](<#create-events>)
-    * [Friend System](<#friend-system>)
 * [Future Features](<#future-features>)
 * [Technologies Used](<#technologies-used>)
 * [Testing](<#testing>)
@@ -102,11 +100,13 @@ All photos were taken by me, the photographer and the logo was designed by me in
 
 ## Wireframes
 
+Wireframes were created for both mobile and desktop.
+
 <details><summary> Wireframes </summary>
 
-![Desktop Wireframe](docs/images/site.png)
+![Desktop Wireframe](docs/images/wireframe-desktop.jpg)
 
-![Mobile Wireframe](docs/images/site-mobile.png)
+![Mobile Wireframe](docs/images/wireframe-mobile.jpg)
 
 </details>
 
@@ -202,12 +202,15 @@ The footer contains the social media icons that link to the main sites as headsh
 
 # Technologies Used
 
-* HTML5 - Delivers the structure and content for the site.
+* HTML5 - Delivers the structure and content for the site
 * CSS3 - Provides the styling for the site
 * Google Chrome DevTools - Used to debug
+* Adobe Photoshop CS6 - used to edit and resize images
 * Tinyjpg - Used to reduce image size
 * Git - Version control
 * GitHub - Used to host website
+
+[Back to top](<#contents>)
 
 # Testing 
 
@@ -216,15 +219,25 @@ I have spent many many hours testing this site and had family and friends go thr
 ## Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsdalsosa.github.io%2FHeadshot-Photography)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsdalsosa.github.io%2FHeadshot-Photography%2F&usermedium=all&vextwarning=&warning=1)
 
 ## Lighthouse Testing
 
 The website was also put through Lighthouse testing and passed all tests with a green result.
 
-![Lighthouse testing](assets/images/readme-images/lighthouse-results.png)
+<details><summary> Lighthouse Results </summary>
+
+![Lighthouse testing](docs/images/lighthouse.png)
+
+</details>
+
+There were a recommendation relating to changing the jpgs to webPs. I tried this but the quality of the images was drastically reduced so I changed back to jpg.
+
+There were another recommendation relating to changing the cache but this was on the server side.
+
+There were a recommendation relating to images not having a width and height. Images were set to 100% for responsivness. 
 
 ## Bugs
 
@@ -249,6 +262,8 @@ As mentioned above, the website has been tested on numerous laptops, desktops an
 
 Due to the fact that I chose to use only HTML and CSS as that is what this project is being graded on, there are better ways to implement features such as the slider in the retouch section and the lightbox in the gallery section. These are not necessarly bugs, more so, opportunities for improvement using JS.
 
+[Back to top](<#contents>)
+
 # Deployment
 
 Deployment was done using GitHub pages. The steps to deploy are as follows: 
@@ -257,7 +272,8 @@ Deployment was done using GitHub pages. The steps to deploy are as follows:
   - Navigate to the Settings tab
   - Click pages link in the left column
   - In the source section drop-down menu, select the Main Branch
-  - Once the Main Branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - Click save
+  - The page will be automatically refreshed with a link to the deployed website. 
 
 The live link can be found here - https://sdalsosa.github.io/Headshot-Photography/
 
@@ -279,6 +295,7 @@ Before/After slider was modified from code created by [Lea Varou](https://lea.ve
 
 Remove all animations, transitions and smooth scroll for those with animation options turned off on device taken from Kevin Powell.
 
+[Back to top](<#contents>)
 
 ## Developer
 
